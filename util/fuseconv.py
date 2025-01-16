@@ -176,7 +176,7 @@ def arg_parser():
         choices=('ATF1502AS', 'ATF1504AS', 'ATF1508AS'), default='ATF1502AS',
         help='Select the device to use.')
     parser.add_argument(
-        'input', metavar='INPUT', type=ATFFileType('r'),
+        'input', metavar='INPUT', type=ATFFileType('rb'),
         help='Read fuses from file INPUT.')
     parser.add_argument(
         'output', metavar='OUTPUT', type=ATFFileType('w'),
